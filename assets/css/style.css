@@ -1,0 +1,530 @@
+:root {
+  --primary-color:aqua;
+  --secondary-color:coral;
+  --tertiary-color:gold;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: var(--secondary-color);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* HEADER / NAV BAR STYLES START */
+  
+  header {
+    padding: 20px 35px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-size: cover;
+  background-position: center;
+    z-index: 9999;
+  }
+  
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+  color:var(--primary-color);
+  background-color: var(--tertiary-color);
+  
+  }
+  
+  header a {
+    text-decoration: none;
+  color:var(--primary-color);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: underline;
+  }
+  
+  /*-----------------HEADER ENDS------------------------*/
+  
+  /*----------sub section------------------*/
+  .sub {
+    background:linear-gradient(to Right,var(--primary-color),var(--secondary-color),var(--tertiary-color));
+    height: 300px;
+  }
+  .sub h2 {
+    background-color: var(--primary-color);
+    color:var(--tertiary-color);
+    float: right;
+    margin:100px 90px  20px 100px;
+    padding:20px;
+  }
+  
+  /*----------------sub section ends--------------------*/
+  
+  /*------------about me section----------*/
+
+#about-me {
+  padding: 30px;
+}
+.about {
+display:flex;
+  flex:1 20%;
+}
+
+.bio {
+  display:flex;
+ flex:2 50%; 
+  margin-left:120px;
+}
+.bio p {
+  line-height:1.2;
+}
+.about h2 {
+  font-size: 40px;
+  color:var(--primary-color);
+}
+.about img {
+  width: 250px;
+  height: 250px;
+  margin-right:20px;
+}
+.about p {
+  color: var(--secondary-color);
+}
+  /*--------------about me ends-------------------------------*/
+
+
+
+/*------------------------work section--------------------------*/
+
+#work {
+  padding: 60px;
+}
+
+.pro {
+  width:100%;
+  }
+  .pro h1 {
+  font-size:40px;
+  color:var(--primary-color);
+  }
+.first {
+  width: 80%;
+  height: 500px;
+  background:linear-gradient(45deg,red, gray);
+  margin-left:250px;
+}
+.first p {
+  background-color: var(--primary-color);
+  float:left;
+  margin-top:400px;
+  padding:10px;
+}
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.second {
+  background:linear-gradient(to Right,red,blue);
+  width:400px;
+  height: 300px;
+  margin-bottom:50px;
+  margin-left:250px;
+}
+.second p {
+  background:var(--primary-color);
+  float:left;
+  margin-top:200px;
+  padding:4px;
+}
+.third {
+  background: linear-gradient(45deg,skyblue,threedlightshadow);
+  width:400px;
+  height: 300px;
+margin-right: 20px;
+}
+.third p {
+  background:var(--primary-color);
+  float:left;
+  margin-top:200px;
+  padding:5px;
+}
+.fourth {
+  background:linear-gradient(45deg,lightblue,chartreuse,blue);
+  width:400px;
+  height: 300px;
+margin-left: 250px;
+}
+.fourth p {
+  background:var(--primary-color);
+  float:left;
+  margin-top:200px;
+  padding:5px
+}
+.fifth {
+  background:linear-gradient(to Right,blue,skyblue,lightblue);
+  width:400px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.fifth p {
+  background:var(--primary-color);
+  float:left;
+  margin-top:200px;
+  padding:5px
+}
+
+/*-------------------------work section ends------------------------------------------*/
+
+
+  /*-------------contact me section-------------------*/
+  footer {
+ 
+  display: flex;
+
+  flex-wrap: wrap;
+  width:100%;
+  padding:60px;
+  }
+  
+  footer h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+  color:var(--primary-color) ;
+  
+  }
+  
+  footer a {
+    text-decoration: none;
+  color:var(--primary-color);
+  }
+  
+  
+  footer ul  {
+    margin:7px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin:0 100px 0 40px;
+  }
+  
+  footer  ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: underline;
+  margin-right: 100px;
+  }
+  
+/*-------------contact me ends-------------------------------*/
+  
+ /*---media queries section-----------*/
+ /* TODO: Add media queries for the following screen sizes */
+
+/* Width at 1024px and below */
+@media screen and (max-width: 1024px) {
+  header {
+  background:blue;
+  
+  }
+  header h1 {
+    width:100%;
+    text-align:center;
+    font-size:50px
+  }
+  header nav {
+    flex:100%;
+    justify-content:center;
+    margin-top:20px;
+    margin-bottom:15px
+  }
+  header nav ul li a {
+    font-size:20px;
+    color:red;
+  }
+   .sub h2 {
+  width:100%;
+     text-align:center;
+     font-size:70px;
+   } 
+  .about {
+    width:100%;
+   align-items:center; 
+  } 
+    .about h2 {
+      color:red;
+      font-size:70px;
+    
+    }
+    #work {
+    width:100%;
+    
+    }
+    .pro {
+      width:100%;
+    }
+    .pro h1 {
+      color:red;
+    font-size:70px;
+    
+    }
+    .second {
+  
+    }
+    .third {
+    margin-left:250px;
+    margin-bottom:40px;
+    }
+    .fourth {
+      margin-bottom:40px;
+    }
+    .fifth {
+      margin-left:250px;
+      
+    }
+    #contact-me {
+      width:100%;
+      text-align:center;
+      
+    }
+    #contact-me,footer  h1 {
+      color:red;
+      font-size:50px;
+      margin:0 auto;
+    }
+    #contact-me,footer,ul,li a {
+    color:blue;
+    margin:0 50px;
+    }
+  }
+ 
+
+/* Width at 768px and below */
+
+@media screen and (max-width: 768px) {
+/*-----------header section-----------*/
+    header {
+    background:blue;
+    
+    }
+    header h1 {
+      width:100%;
+      text-align:center;
+      font-size:50px
+    }
+    header nav {
+      flex:100%;
+      justify-content:center;
+      margin-top:20px;
+      margin-bottom:15px
+    }
+    header nav ul li a {
+      font-size:20px;
+      color:red;
+    }
+    /*---------------------header section----*/
+
+    /*-------sub section-----*/
+     .sub h2 {
+    width:100%;
+       text-align:center;
+       font-size:70px;
+     } 
+
+     /*-------sub section----------*/
+
+
+     /*-------about me section-------*/
+    .about {
+      width:100%;
+     align-items:center; 
+    } 
+      .about h2 {
+        color:blue;
+        font-size:70px;
+      
+      }
+
+      /*---------about me ends---------*/
+
+      /*-----------work section---------*/
+      #work {
+      width:100%;
+      
+      }
+      .pro {
+        width:100%;
+      }
+      .pro h1 {
+        color:green;
+      font-size:70px;
+      
+      }
+      .second {
+    
+      }
+      .third {
+      margin-left:250px;
+      margin-bottom:40px;
+      }
+      .fourth {
+        margin-bottom:40px;
+      }
+      .fifth {
+        margin-left:250px;
+        
+      }
+      /*---------work section ends-------*/
+
+
+      /*---------contact me section--------------*/
+      #contact-me {
+        width:100%;
+        text-align:center;
+        
+      }
+      #contact-me,footer  h1 {
+        color:red;
+        font-size:50px;
+        margin:0 auto;
+      }
+      #contact-me,footer,ul,li a {
+      color:blue;
+      margin:0 50px;
+      }
+
+      /*----------contact me ends----------*/
+    }
+   
+
+/* Width at 600px and below */
+@media screen and (max-width: 600px) {
+  /*---------header------------------*/
+  header {
+    background:blue;
+    
+    }
+    header h1 {
+      width:100%;
+      text-align:center;
+      font-size:50px
+    }
+    header nav {
+      flex:100%;
+      justify-content:center;
+      margin-top:20px;
+      margin-bottom:15px
+    }
+    header nav ul li a {
+      font-size:20px;
+      color:red;
+    }
+    /*----------------header ends-----------*/
+
+
+
+    /*------------sub section-------------*/
+     .sub h2 {
+    width:100%;
+       text-align:center;
+       font-size:70px;
+     } 
+     /*--------------sub section---------------*/
+
+     /*----------about me------------*/
+    .about {
+      width:100%;
+     align-items:center; 
+    } 
+      .about h2 {
+        color:red;
+        font-size:70px;
+      
+      }
+      /*-----------about me-------*/
+
+      /*-------------work---------------*/
+      #work {
+      width:100%;
+      
+      }
+      .pro {
+        width:100%;
+      }
+      .pro h1 {
+        color:red;
+      font-size:70px;
+      
+      }
+      .second {
+    
+      }
+      .third {
+      margin-left:250px;
+      margin-bottom:40px;
+      }
+      .fourth {
+        margin-bottom:40px;
+      }
+      .fifth {
+        margin-left:250px;
+        
+      }
+      /*-----------work------------*/
+
+
+      /*-------contact me-------------------*/
+      #contact-me {
+        width:100%;
+        text-align:center;
+        
+      }
+      #contact-me,footer  h1 {
+        color:red;
+        font-size:50px;
+        margin:0 auto;
+      }
+      #contact-me,footer,ul,li a {
+      color:blue;
+      margin:0 50px;
+      }
+      /*-------------contact me ends---------*/
+}
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
