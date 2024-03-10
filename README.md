@@ -1,14 +1,14 @@
-<h1>Advanced CSS - Personal Portfolio </h1>
+##Advanced CSS - Personal Portfolio 
 
-Purpose:
+##Purpose:
 Peronal introduction using advanced CSS layout
 
-Built with:
+##Built with:
 1) HTML
 2) CSS
 
-Website:
-https://github.com/jeevanthapa1987/css-portfolio.git
+##Website:
+https://jeevanthapa1987.github.io/advanced-css-personal-portfolio/
 
-Contribution:
+##Contribution:
 Made with ❤️ by JEEVAN THAPA
